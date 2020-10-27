@@ -23,21 +23,21 @@ const navSlide = () => {
         nav.classList.toggle('nav-active');
         if (navInd == 0) {
             $("#img-logo").fadeTo(400, 0.30, function () {
-                $("#img-logo").attr("src", '../images/logo-bookmark-nav-active.svg');
+                $("#img-logo").attr("src", './images/logo-bookmark-nav-active.svg');
             }).fadeTo(100, 1);
             $("#img-burger").fadeTo(100, 0.30, function () {
-                $("#img-burger").attr("src", '../images/icon-close.svg');
+                $("#img-burger").attr("src", './images/icon-close.svg');
             }).fadeTo(400, 1);
 
             navInd = 1;
         } else {
             console.log('odje sam!');
             $("#img-logo").fadeTo(100, 0.30, function () {
-                $("#img-logo").attr("src", '../images/logo-bookmark.svg');
+                $("#img-logo").attr("src", './images/logo-bookmark.svg');
             }).fadeTo(400, 1);
 
             $("#img-burger").fadeTo(400, 0.30, function () {
-                $("#img-burger").attr("src", '../images/icon-hamburger.svg');
+                $("#img-burger").attr("src", './images/icon-hamburger.svg');
             }).fadeTo(100, 1);
             navInd = 0;
         }
@@ -85,17 +85,17 @@ function ChangeArrow(elem, num) {
     if (($(elem)).attr('aria-expanded') === "true") {
 
         for (var i = 0; i < 4; i++) {
-            $(questionImgIds[i]).attr("src", '../images/icon-arrow.svg');
+            $(questionImgIds[i]).attr("src", './images/icon-arrow.svg');
         }
 
-        $(questionImgIds[num]).attr("src", '../images/icon-arrow.svg');
+        $(questionImgIds[num]).attr("src", './images/icon-arrow.svg');
 
     } else {
         for (var i = 0; i < 4; i++) {
-            $(questionImgIds[i]).attr("src", '../images/icon-arrow.svg');
+            $(questionImgIds[i]).attr("src", './images/icon-arrow.svg');
         }
 
-        $(questionImgIds[num]).attr("src", '../images/icon-arrow-red.svg');
+        $(questionImgIds[num]).attr("src", './images/icon-arrow-red.svg');
     }
 }
 
